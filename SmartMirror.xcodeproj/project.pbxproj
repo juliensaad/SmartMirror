@@ -1,0 +1,409 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D2654DD1C7BB2C800F06F20 /* SmartMirrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2654DC1C7BB2C800F06F20 /* SmartMirrorViewController.swift */; };
+		1D2654DE1C7BB33800F06F20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D4B2C771C7BA1E900A8D861 /* Main.storyboard */; };
+		1D4B2C741C7BA1E900A8D861 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4B2C731C7BA1E900A8D861 /* AppDelegate.swift */; };
+		1D4B2C7B1C7BA1E900A8D861 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D4B2C7A1C7BA1E900A8D861 /* Assets.xcassets */; };
+		1D4B2C7E1C7BA1E900A8D861 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D4B2C7C1C7BA1E900A8D861 /* LaunchScreen.storyboard */; };
+		1D914E171C7BBAE000D8EAF8 /* SKYIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D914E161C7BBAE000D8EAF8 /* SKYIconView.m */; };
+		1D9DE54F1C83A3BB00D207E4 /* SmartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9DE54E1C83A3BB00D207E4 /* SmartTableViewCell.swift */; };
+		1D9DE5551C83AC6A00D207E4 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9DE5541C83AC6A00D207E4 /* Article.swift */; };
+		95E25C69DADF1E91FC3326F6 /* Pods_SmartMirror.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C555C149E96F9E689493452 /* Pods_SmartMirror.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0052C9D946539D460EFE2FEF /* Pods-SmartMirror.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartMirror.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartMirror/Pods-SmartMirror.release.xcconfig"; sourceTree = "<group>"; };
+		1D2654DC1C7BB2C800F06F20 /* SmartMirrorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmartMirrorViewController.swift; sourceTree = "<group>"; };
+		1D4B2C701C7BA1E900A8D861 /* SmartMirror.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartMirror.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D4B2C731C7BA1E900A8D861 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1D4B2C781C7BA1E900A8D861 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1D4B2C7A1C7BA1E900A8D861 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1D4B2C7D1C7BA1E900A8D861 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1D4B2C7F1C7BA1E900A8D861 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D914E141C7BBAE000D8EAF8 /* SmartMirror-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SmartMirror-Bridging-Header.h"; sourceTree = "<group>"; };
+		1D914E151C7BBAE000D8EAF8 /* SKYIconView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SKYIconView.h; path = "../../../Downloads/cocoa-skycons-master/Skycons/SKYIconView.h"; sourceTree = "<group>"; };
+		1D914E161C7BBAE000D8EAF8 /* SKYIconView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SKYIconView.m; path = "../../../Downloads/cocoa-skycons-master/Skycons/SKYIconView.m"; sourceTree = "<group>"; };
+		1D9DE54E1C83A3BB00D207E4 /* SmartTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmartTableViewCell.swift; sourceTree = "<group>"; };
+		1D9DE5541C83AC6A00D207E4 /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		4C555C149E96F9E689493452 /* Pods_SmartMirror.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartMirror.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		56F75371CDDE814D5C687A82 /* Pods-SmartMirror.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartMirror.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartMirror/Pods-SmartMirror.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D4B2C6D1C7BA1E900A8D861 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95E25C69DADF1E91FC3326F6 /* Pods_SmartMirror.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0709BEE91F1F7AA0447693CA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				56F75371CDDE814D5C687A82 /* Pods-SmartMirror.debug.xcconfig */,
+				0052C9D946539D460EFE2FEF /* Pods-SmartMirror.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1D4B2C671C7BA1E900A8D861 = {
+			isa = PBXGroup;
+			children = (
+				1D4B2C721C7BA1E900A8D861 /* SmartMirror */,
+				1D4B2C711C7BA1E900A8D861 /* Products */,
+				0709BEE91F1F7AA0447693CA /* Pods */,
+				233F4E6E3CCBF7D84F71C96A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1D4B2C711C7BA1E900A8D861 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D4B2C701C7BA1E900A8D861 /* SmartMirror.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1D4B2C721C7BA1E900A8D861 /* SmartMirror */ = {
+			isa = PBXGroup;
+			children = (
+				1D914E131C7BBAD600D8EAF8 /* Skycons */,
+				1D4B2C731C7BA1E900A8D861 /* AppDelegate.swift */,
+				1D9DE54E1C83A3BB00D207E4 /* SmartTableViewCell.swift */,
+				1D2654DC1C7BB2C800F06F20 /* SmartMirrorViewController.swift */,
+				1D4B2C771C7BA1E900A8D861 /* Main.storyboard */,
+				1D4B2C7A1C7BA1E900A8D861 /* Assets.xcassets */,
+				1D4B2C7C1C7BA1E900A8D861 /* LaunchScreen.storyboard */,
+				1D4B2C7F1C7BA1E900A8D861 /* Info.plist */,
+				1D9DE5541C83AC6A00D207E4 /* Article.swift */,
+			);
+			path = SmartMirror;
+			sourceTree = "<group>";
+		};
+		1D914E131C7BBAD600D8EAF8 /* Skycons */ = {
+			isa = PBXGroup;
+			children = (
+				1D914E151C7BBAE000D8EAF8 /* SKYIconView.h */,
+				1D914E161C7BBAE000D8EAF8 /* SKYIconView.m */,
+				1D914E141C7BBAE000D8EAF8 /* SmartMirror-Bridging-Header.h */,
+			);
+			name = Skycons;
+			sourceTree = "<group>";
+		};
+		233F4E6E3CCBF7D84F71C96A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C555C149E96F9E689493452 /* Pods_SmartMirror.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D4B2C6F1C7BA1E900A8D861 /* SmartMirror */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D4B2C821C7BA1E900A8D861 /* Build configuration list for PBXNativeTarget "SmartMirror" */;
+			buildPhases = (
+				0541DF705BDFC929A380A887 /* Check Pods Manifest.lock */,
+				1D4B2C6C1C7BA1E900A8D861 /* Sources */,
+				1D4B2C6D1C7BA1E900A8D861 /* Frameworks */,
+				1D4B2C6E1C7BA1E900A8D861 /* Resources */,
+				B00BC68859D0007B5FC692CF /* Embed Pods Frameworks */,
+				AB598411795CF00B93D91CF4 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartMirror;
+			productName = SmartMirror;
+			productReference = 1D4B2C701C7BA1E900A8D861 /* SmartMirror.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1D4B2C681C7BA1E900A8D861 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Julien Saad";
+				TargetAttributes = {
+					1D4B2C6F1C7BA1E900A8D861 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 4HXZK4QW3Z;
+					};
+				};
+			};
+			buildConfigurationList = 1D4B2C6B1C7BA1E900A8D861 /* Build configuration list for PBXProject "SmartMirror" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1D4B2C671C7BA1E900A8D861;
+			productRefGroup = 1D4B2C711C7BA1E900A8D861 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D4B2C6F1C7BA1E900A8D861 /* SmartMirror */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D4B2C6E1C7BA1E900A8D861 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D2654DE1C7BB33800F06F20 /* Main.storyboard in Resources */,
+				1D4B2C7E1C7BA1E900A8D861 /* LaunchScreen.storyboard in Resources */,
+				1D4B2C7B1C7BA1E900A8D861 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0541DF705BDFC929A380A887 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AB598411795CF00B93D91CF4 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartMirror/Pods-SmartMirror-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B00BC68859D0007B5FC692CF /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartMirror/Pods-SmartMirror-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D4B2C6C1C7BA1E900A8D861 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D9DE5551C83AC6A00D207E4 /* Article.swift in Sources */,
+				1D914E171C7BBAE000D8EAF8 /* SKYIconView.m in Sources */,
+				1D9DE54F1C83A3BB00D207E4 /* SmartTableViewCell.swift in Sources */,
+				1D4B2C741C7BA1E900A8D861 /* AppDelegate.swift in Sources */,
+				1D2654DD1C7BB2C800F06F20 /* SmartMirrorViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1D4B2C771C7BA1E900A8D861 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D4B2C781C7BA1E900A8D861 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1D4B2C7C1C7BA1E900A8D861 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D4B2C7D1C7BA1E900A8D861 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1D4B2C801C7BA1E900A8D861 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		1D4B2C811C7BA1E900A8D861 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1D4B2C831C7BA1E900A8D861 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56F75371CDDE814D5C687A82 /* Pods-SmartMirror.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = SmartMirror/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.juliensaad.SmartMirror;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SmartMirror/SmartMirror-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1D4B2C841C7BA1E900A8D861 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0052C9D946539D460EFE2FEF /* Pods-SmartMirror.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = SmartMirror/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.juliensaad.SmartMirror;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SmartMirror/SmartMirror-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D4B2C6B1C7BA1E900A8D861 /* Build configuration list for PBXProject "SmartMirror" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D4B2C801C7BA1E900A8D861 /* Debug */,
+				1D4B2C811C7BA1E900A8D861 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D4B2C821C7BA1E900A8D861 /* Build configuration list for PBXNativeTarget "SmartMirror" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D4B2C831C7BA1E900A8D861 /* Debug */,
+				1D4B2C841C7BA1E900A8D861 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1D4B2C681C7BA1E900A8D861 /* Project object */;
+}
