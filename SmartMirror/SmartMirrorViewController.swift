@@ -12,7 +12,7 @@ import EventKitUI
 import Alamofire
 
 class SmartMirrorViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+    
     @IBOutlet weak var temperatureLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
@@ -37,10 +37,11 @@ class SmartMirrorViewController: UIViewController, UITableViewDelegate, UITableV
         fetchEvents()
         fetchArticles()
         
-        // Update temperature every 15 minutes
+        // Update information at a scheduled interval
         NSTimer.scheduledTimerWithTimeInterval(60 * 15, target: self, selector: "fetchTemperature", userInfo: nil, repeats: true)
         NSTimer.scheduledTimerWithTimeInterval(30, target: self, selector: "updateDate", userInfo: nil, repeats: true)
         NSTimer.scheduledTimerWithTimeInterval(60 * 5, target: self, selector: "fetchEvents", userInfo: nil, repeats: true)
+        NSTimer.scheduledTimerWithTimeInterval(60 * 5, target: self, selector: "fetchArticles", userInfo: nil, repeats: true)
     }
     
     func updateDate() {
@@ -57,7 +58,7 @@ class SmartMirrorViewController: UIViewController, UITableViewDelegate, UITableV
         
         let timestamp = NSDateFormatter.localizedStringFromDate(NSDate(), dateStyle: .NoStyle, timeStyle: .ShortStyle)
         self.timeLabel.text = timestamp.stringByReplacingOccurrencesOfString(" AM", withString: "")
-                                        .stringByReplacingOccurrencesOfString(" PM", withString: "");
+            .stringByReplacingOccurrencesOfString(" PM", withString: "");
         
     }
     
@@ -98,7 +99,7 @@ class SmartMirrorViewController: UIViewController, UITableViewDelegate, UITableV
                             
                         case "partly-cloudy-day":
                             self.temperatureIconView.type = SKYIconType.PartlyCloudyDay
-                    
+                            
                         case "partly-cloudy-night":
                             self.temperatureIconView.type = SKYIconType.PartlyCloudyNight
                         default:
@@ -108,7 +109,7 @@ class SmartMirrorViewController: UIViewController, UITableViewDelegate, UITableV
                 }
             }
         }
-
+        
     }
     
     func fetchEvents() {
@@ -139,8 +140,6 @@ class SmartMirrorViewController: UIViewController, UITableViewDelegate, UITableV
             
             switch response.result {
             case .Success(let JSON):
-                print("Success with JSON: \(JSON)")
-                
                 guard let results = JSON["results"] else {
                     return
                 }
@@ -182,7 +181,7 @@ class SmartMirrorViewController: UIViewController, UITableViewDelegate, UITableV
             }
             cell.textLabel?.text = "\(event.title) - \(startTimeString)"
             cell.type = .Calendar
-
+            
         } else {
             let article = articles[indexPath.row]
             cell.textLabel?.text = article.title
