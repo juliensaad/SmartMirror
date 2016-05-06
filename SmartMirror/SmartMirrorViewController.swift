@@ -11,7 +11,8 @@ import ForecastIO
 import EventKitUI
 import Alamofire
 
-class SmartMirrorViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+
+class SmartMirrorViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, SpeechRecognizerDelegate {
     
     @IBOutlet weak var temperatureLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
@@ -25,6 +26,8 @@ class SmartMirrorViewController: UIViewController, UITableViewDelegate, UITableV
     var events:[EKEvent] = Array()
     
     var articles:[Article] = Array()
+    
+    let speechRecognizer: SpeechRecognizer = SpeechRecognizer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,7 +45,15 @@ class SmartMirrorViewController: UIViewController, UITableViewDelegate, UITableV
         NSTimer.scheduledTimerWithTimeInterval(30, target: self, selector: #selector(SmartMirrorViewController.updateDate), userInfo: nil, repeats: true)
         NSTimer.scheduledTimerWithTimeInterval(60 * 5, target: self, selector: #selector(SmartMirrorViewController.fetchEvents), userInfo: nil, repeats: true)
         NSTimer.scheduledTimerWithTimeInterval(60 * 5, target: self, selector: #selector(SmartMirrorViewController.fetchArticles), userInfo: nil, repeats: true)
+        
+        
+        speechRecognizer.startRecognition()
+        speechRecognizer.delegate = self
     }
+    
+    // MARK: Speech Recognition
+    
+    // Periodic updates
     
     func updateDate() {
         let dayFormatter = NSDateFormatter()
@@ -235,8 +246,19 @@ class SmartMirrorViewController: UIViewController, UITableViewDelegate, UITableV
     override func prefersStatusBarHidden() -> Bool {
         return true;
     }
+    
+    // MARK: Speech Recognition
+    func speechRecognizerDidAskForAction(action : Action) {
+        switch action {
+        case .Open:
+            UIScreen.mainScreen().brightness = 1.0
+            self.view.alpha = 1
+        case .Close:
+            UIScreen.mainScreen().brightness = 0
+            self.view.alpha = 0
+        }
+    }
 }
-
 
 extension NSDate {
     func dayOfWeek() -> Int? {
