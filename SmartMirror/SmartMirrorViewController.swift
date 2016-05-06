@@ -38,10 +38,10 @@ class SmartMirrorViewController: UIViewController, UITableViewDelegate, UITableV
         fetchArticles()
         
         // Update information at a scheduled interval
-        NSTimer.scheduledTimerWithTimeInterval(60 * 15, target: self, selector: "fetchTemperature", userInfo: nil, repeats: true)
-        NSTimer.scheduledTimerWithTimeInterval(30, target: self, selector: "updateDate", userInfo: nil, repeats: true)
-        NSTimer.scheduledTimerWithTimeInterval(60 * 5, target: self, selector: "fetchEvents", userInfo: nil, repeats: true)
-        NSTimer.scheduledTimerWithTimeInterval(60 * 5, target: self, selector: "fetchArticles", userInfo: nil, repeats: true)
+        NSTimer.scheduledTimerWithTimeInterval(60 * 15, target: self, selector: #selector(SmartMirrorViewController.fetchTemperature), userInfo: nil, repeats: true)
+        NSTimer.scheduledTimerWithTimeInterval(30, target: self, selector: #selector(SmartMirrorViewController.updateDate), userInfo: nil, repeats: true)
+        NSTimer.scheduledTimerWithTimeInterval(60 * 5, target: self, selector: #selector(SmartMirrorViewController.fetchEvents), userInfo: nil, repeats: true)
+        NSTimer.scheduledTimerWithTimeInterval(60 * 5, target: self, selector: #selector(SmartMirrorViewController.fetchArticles), userInfo: nil, repeats: true)
     }
     
     func updateDate() {
@@ -138,6 +138,8 @@ class SmartMirrorViewController: UIViewController, UITableViewDelegate, UITableV
     func fetchArticles() {
         Alamofire.request(.GET, "https://api.nytimes.com/svc/topstories/v1/home.json?api-key=9e3eaee4f548a208d2ffe7d29f7fba01:16:74568796", parameters: nil, encoding: .JSON, headers: nil).responseJSON { (response) -> Void in
             
+            self.articles.removeAll()
+            
             switch response.result {
             case .Success(let JSON):
                 guard let results = JSON["results"] else {
@@ -165,6 +167,8 @@ class SmartMirrorViewController: UIViewController, UITableViewDelegate, UITableV
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = self.tableView.dequeueReusableCellWithIdentifier("cell")! as! SmartTableViewCell
+        
+        cell.userInteractionEnabled = false
         
         if indexPath.section == 0 {
             let event = events[indexPath.row]

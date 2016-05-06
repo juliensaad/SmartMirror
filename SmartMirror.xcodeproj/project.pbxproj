@@ -13,6 +13,8 @@
 		1D4B2C7B1C7BA1E900A8D861 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D4B2C7A1C7BA1E900A8D861 /* Assets.xcassets */; };
 		1D4B2C7E1C7BA1E900A8D861 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D4B2C7C1C7BA1E900A8D861 /* LaunchScreen.storyboard */; };
 		1D51C2E01C83B36C0098C1BA /* SKYIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D51C2DF1C83B36C0098C1BA /* SKYIconView.m */; };
+		1D567C9C1CDCF2E100DE970C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D567C9B1CDCF2E100DE970C /* AVFoundation.framework */; };
+		1D567C9E1CDCF2E600DE970C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D567C9D1CDCF2E600DE970C /* AudioToolbox.framework */; };
 		1D9DE54F1C83A3BB00D207E4 /* SmartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9DE54E1C83A3BB00D207E4 /* SmartTableViewCell.swift */; };
 		1D9DE5551C83AC6A00D207E4 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9DE5541C83AC6A00D207E4 /* Article.swift */; };
 		95E25C69DADF1E91FC3326F6 /* Pods_SmartMirror.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C555C149E96F9E689493452 /* Pods_SmartMirror.framework */; };
@@ -29,6 +31,8 @@
 		1D4B2C7F1C7BA1E900A8D861 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D51C2DE1C83B36C0098C1BA /* SKYIconView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKYIconView.h; sourceTree = "<group>"; };
 		1D51C2DF1C83B36C0098C1BA /* SKYIconView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKYIconView.m; sourceTree = "<group>"; };
+		1D567C9B1CDCF2E100DE970C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		1D567C9D1CDCF2E600DE970C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		1D914E141C7BBAE000D8EAF8 /* SmartMirror-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SmartMirror-Bridging-Header.h"; sourceTree = "<group>"; };
 		1D9DE54E1C83A3BB00D207E4 /* SmartTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmartTableViewCell.swift; sourceTree = "<group>"; };
 		1D9DE5541C83AC6A00D207E4 /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
@@ -41,6 +45,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D567C9E1CDCF2E600DE970C /* AudioToolbox.framework in Frameworks */,
+				1D567C9C1CDCF2E100DE970C /* AVFoundation.framework in Frameworks */,
 				95E25C69DADF1E91FC3326F6 /* Pods_SmartMirror.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -104,6 +110,8 @@
 		233F4E6E3CCBF7D84F71C96A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1D567C9D1CDCF2E600DE970C /* AudioToolbox.framework */,
+				1D567C9B1CDCF2E100DE970C /* AVFoundation.framework */,
 				4C555C149E96F9E689493452 /* Pods_SmartMirror.framework */,
 			);
 			name = Frameworks;
